@@ -25,7 +25,7 @@ git forge. No dependencies, TypeScript on Node 22 (stdlib only), all state in me
 
 | File | Contents |
 | --- | --- |
-| `main.ts` | The entry lifecycle (kit starter, unchanged): bind an ephemeral port, register with `$MAKEFUN_ENV_URL`, poll `/done`, exit 0. |
+| `main.ts` | The entry lifecycle (rewritten from scratch for this entry): bind an ephemeral port, register with `$MAKEFUN_ENV_URL`, poll `/done`, exit 0. |
 | `app.ts` | The HTTP server: routing, auth, body reading, response envelope. |
 | `store.ts` | The in-memory store: repos, refs, issues, pull requests, deterministic logical clock. |
 | `gitcore.ts` | SHA-1 object hashing, tree/commit/tag build+parse, pkt-lines, pack read/write. |
